@@ -5,7 +5,7 @@ const app = express();
 const PORT = 443 || process.env.PORT;
 
 app.engine('html', es6Renderer);
-app.set('views', './views');
+app.set('views', './public');
 app.set('view engine', 'html');
 app.use(express.static(__dirname + "/public"))
 
